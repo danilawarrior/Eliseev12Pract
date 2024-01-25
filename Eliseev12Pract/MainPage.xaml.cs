@@ -74,7 +74,10 @@ namespace Eliseev12Pract
             }
         }
 
-
+        private void goToListViewClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ListViewPage());
+        }
 
         public void Edit(Country country, int index)
         {
@@ -85,7 +88,6 @@ namespace Eliseev12Pract
             isEdit = true;
             indexOfCountry = index;
         }
-
 
 
 
